@@ -4,7 +4,7 @@ matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from random import randrange
 # custom modules
-from utils     import Options
+from utils     import Options, rgb2gray
 from simulator import Simulator
 
 # 0. initialization
