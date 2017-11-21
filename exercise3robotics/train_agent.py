@@ -33,6 +33,8 @@ trans = TransitionTable(opt.state_siz, opt.act_num, opt.hist_len,
 #
 # for i in range(number_of_batches):
 #     x, y = trans.sample_minibatch()
+# Hint: to ease loading your model later create a model.py file
+# where you define your network configuration
 ######################################
 
 # 2. save your trained model

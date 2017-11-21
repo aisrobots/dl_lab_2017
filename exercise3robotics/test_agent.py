@@ -12,6 +12,10 @@ opt = Options()
 sim = Simulator(opt.map_ind, opt.cub_siz, opt.pob_siz, opt.act_num)
 
 # TODO: load your agent
+# Hint: If using standard tensorflow api it helps to write your own model.py  
+# file with the network configuration, including a function model.load().
+# You can use saver = tf.train.Saver() and saver.restore(sess, filename_cpkt)
+
 agent =None
 
 # 1. control loop
@@ -39,6 +43,7 @@ for step in range(opt.eval_steps):
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         # TODO: here you would let your agent take its action
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        # Hint: get the image using rgb2gray(state.pob), append latest image to a history 
         # this just gets a random action
         action = randrange(opt.act_num)
         state = sim.step(action)
