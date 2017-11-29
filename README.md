@@ -17,6 +17,8 @@ Also make sure your tensorflow program is running on the gpu and not the cpu.
 4. Start a screen session
       ```Shell
       screen -S my_training
+      python3
+      import tensorflow
       ```
 5. Detach from screen using: ctrl+a+d  
 6. Login back into screen
