@@ -12,8 +12,13 @@ The exercises for the deep learning lab course we are teaching at the University
       ssh tfpoolXX
       ```
 3. Replace XX with a 2 digit number of the computer you want to connect . 
-Before running make sure no one else is using the selected computer by running ```Shell $who```. 
+Before running make sure no one else is using the selected computer. 
 Also make sure your tensorflow program is running on the gpu and not the cpu.
+      ```Shell
+      who
+      top
+      nvidia-smi
+      ```
 4. Start a screen session
       ```Shell
       screen -S my_training
