@@ -7,7 +7,7 @@ The exercises for the deep learning lab course we are teaching at the University
       ssh username@login.informatik.uni-freiburg.de
       ```
 2. Do not run anything on the main server. Connect to one of the pool 
-  computer there instead
+  computer there instead. Preferably use tfpool25-46 or tfpool51-63 they provide the best GPUs.
       ```Shell
       ssh tfpoolXX
       ```
